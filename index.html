@@ -1,1 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Happy Birthday Routa ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<audio id="music" loop>
+    <source src="assets/music/lovesong.mp3" type="audio/mp3">
+</audio>
+
+
+<!-- STAR BACKGROUND -->
+<canvas id="stars"></canvas>
+
+
+<!-- INTRO -->
+<section id="intro">
+
+    <div class="moon"></div>
+
+    <h1>
+        Happy Birthday
+    </h1>
+
+    <h2>
+        Routa ❤️
+    </h2>
+
+    <p>
+        A little story written by Ahmed
+    </p>
+
+
+    <button onclick="startStory()">
+        Begin Our Story ✨
+    </button>
+
+</section>
+
+
+
+<!-- LOVE LETTER -->
+
+<section id="letter" class="hidden">
+
+<div class="envelope" onclick="openLetter()">
+    💌
+    <p>Open My Letter</p>
+</div>
+
+
+<div id="letterText" class="letter-paper hidden">
+
+</div>
+
+
+</section>
+
+
+
+
+<!-- TIMELINE -->
+
+<section id="timeline">
+
+<h1>Our Story 🌸</h1>
+
+
+<div class="event">
+
+<h2>04 • 03 • 2026</h2>
+
+<p>
+The day I met you.
+The day a normal day became the beginning of something special.
+</p>
+
+</div>
+
+
+
+<div class="event">
+
+<h2>07 • 03 • 2026</h2>
+
+<p>
+Our first hug.
+A moment I will never forget.
+</p>
+
+</div>
+
+
+
+<div class="event">
+
+<h2>10 • 03 • 2026</h2>
+
+<p>
+The first time we said:
+"I love you."
+</p>
+
+</div>
+
+
+
+<div class="event">
+
+<h2>21 • 03 • 2026</h2>
+
+<p>
+The day we became us ❤️
+</p>
+
+</div>
+
+
+
+<div class="event">
+
+<h2>Every Day</h2>
+
+<p>
+We choose each other again and again.
+</p>
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- COUNTER -->
+
+<section id="counter">
+
+<h1>
+Our Time Together ❤️
+</h1>
+
+<div id="timer">
+
+0 Days
+0 Hours
+0 Minutes
+0 Seconds
+
+</div>
+
+</section>
+
+
+
+
+
+
+<!-- GALLERY -->
+
+<section id="gallery">
+
+<h1>
+Our Memories 📸
+</h1>
+
+
+<div class="photos">
+
+<img src="assets/images/photo1.jpg">
+<img src="assets/images/photo2.jpg">
+<img src="assets/images/photo3.jpg">
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- STARS -->
+
+<section id="starMessages">
+
+<h1>
+25 Little Things I Love About You ⭐
+</h1>
+
+
+<div id="starsContainer"></div>
+
+
+</section>
+
+
+
+
+
+
+<!-- CAKE -->
+
+<section id="cake">
+
+<h1>
+Make A Wish 🎂
+</h1>
+
+
+<div class="cake">
+
+🕯️🕯️🕯️
+
+</div>
+
+
+<button onclick="blowCandles()">
+
+Blow Candles
+
+</button>
+
+
+<p id="cakeMessage"></p>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- BTS -->
+
+<section id="bts">
+
+
+<h1>
+💜 A Little BTS Corner 💜
+</h1>
+
+
+<p>
+
+I know BTS is something that brings happiness to your heart.
+
+So today, a little purple space exists here just for you.
+
+</p>
+
+
+<h2>
+Borahae 💜
+</h2>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- FUTURE -->
+
+<section id="future">
+
+
+<h1>
+Our Future 🌎
+</h1>
+
+
+<div class="cards">
+
+
+<div>
+🐈 Victor
+<br>
+We'll take care of him together.
+</div>
+
+
+<div>
+🐈 Soumaya
+<br>
+Our little family.
+</div>
+
+
+<div>
+❤️ Our Hearts
+<br>
+Protecting what we have.
+</div>
+
+
+<div>
+✈️ Travel
+<br>
+Seeing the world together.
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- SUNRISE -->
+
+<section id="sunrise">
+
+
+<h1>
+"No matter how many birthdays pass..."
+</h1>
+
+
+<h2>
+"I'll always choose you."
+</h2>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- FINAL -->
+
+
+<section id="final">
+
+
+<h1>
+Happy 17th Birthday Routa ❤️
+</h1>
+
+
+<p>
+
+Thank you for walking into my life.
+
+Thank you for choosing us every day.
+
+I hope one day we look back at this moment together and smile.
+
+</p>
+
+
+<h2>
+Forever yours,
+<br>
+Ahmed ❤️
+</h2>
+
+
+
+</section>
+
+
+
+
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
