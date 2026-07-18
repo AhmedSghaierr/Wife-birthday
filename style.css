@@ -1,1 +1,735 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    background:
+    linear-gradient(
+        180deg,
+        #080014,
+        #20002c,
+        #ff8fb1
+    );
+
+    color:white;
+
+    font-family:'Poppins', sans-serif;
+
+    overflow-x:hidden;
+}
+
+
+
+
+#stars {
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    z-index:-1;
+
+}
+
+
+
+
+section {
+
+    min-height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:60px 20px;
+
+    text-align:center;
+
+}
+
+
+
+
+h1 {
+
+    font-family:
+    'Cormorant Garamond',
+    serif;
+
+    font-size:4rem;
+
+    letter-spacing:3px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+h2 {
+
+    font-size:2rem;
+
+    color:#ffb6d9;
+
+    margin:15px;
+
+}
+
+
+
+
+p {
+
+    max-width:700px;
+
+    line-height:1.8;
+
+    font-size:1.1rem;
+
+}
+
+
+
+
+button {
+
+
+    margin-top:30px;
+
+    padding:15px 35px;
+
+    border:none;
+
+    border-radius:50px;
+
+
+    background:
+
+    linear-gradient(
+        45deg,
+        #ff6fa5,
+        #9b5cff
+    );
+
+
+    color:white;
+
+    font-size:1rem;
+
+    cursor:pointer;
+
+
+    box-shadow:
+
+    0 0 30px #ff6fa5;
+
+
+    transition:.3s;
+
+}
+
+
+
+button:hover {
+
+    transform:scale(1.1);
+
+}
+
+
+
+
+
+
+/* MOON */
+
+
+.moon {
+
+    width:180px;
+
+    height:180px;
+
+    border-radius:50%;
+
+
+    background:
+
+    radial-gradient(
+        circle,
+        white,
+        #ffe8fa
+    );
+
+
+    box-shadow:
+
+    0 0 80px white;
+
+
+    margin-bottom:40px;
+
+}
+
+
+
+
+
+
+/* INTRO */
+
+
+#intro h1 {
+
+    animation:
+
+    fade 3s;
+
+}
+
+
+
+
+#intro h2 {
+
+    font-size:5rem;
+
+    animation:
+
+    glow 3s infinite alternate;
+
+}
+
+
+
+
+.hidden {
+
+    display:none;
+
+}
+
+
+
+
+
+
+
+/* LETTER */
+
+
+.envelope {
+
+    cursor:pointer;
+
+    font-size:7rem;
+
+}
+
+
+.envelope p {
+
+    font-size:1rem;
+
+}
+
+
+
+.letter-paper {
+
+
+    background:
+
+    rgba(255,255,255,.1);
+
+
+    backdrop-filter:blur(20px);
+
+
+    padding:40px;
+
+    border-radius:25px;
+
+
+    max-width:700px;
+
+
+    border:
+
+    1px solid rgba(255,255,255,.2);
+
+
+}
+
+
+
+
+
+/* TIMELINE */
+
+
+.event {
+
+
+    width:80%;
+
+
+    max-width:700px;
+
+
+    margin:30px;
+
+
+    padding:30px;
+
+
+    border-radius:25px;
+
+
+    background:
+
+    rgba(255,255,255,.08);
+
+
+    backdrop-filter:blur(15px);
+
+
+    transition:.5s;
+
+
+}
+
+
+
+.event:hover {
+
+    transform:translateY(-10px);
+
+    box-shadow:
+
+    0 0 40px #ff8abf;
+
+}
+
+
+
+
+
+/* TIMER */
+
+
+#timer {
+
+
+    font-size:3rem;
+
+
+    margin-top:30px;
+
+
+    color:#ffd1e6;
+
+
+}
+
+
+
+
+
+
+
+/* GALLERY */
+
+
+.photos {
+
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:30px;
+
+}
+
+
+
+.photos img {
+
+
+    width:300px;
+
+    height:400px;
+
+
+    object-fit:cover;
+
+
+    border-radius:25px;
+
+
+    transition:.5s;
+
+
+    box-shadow:
+
+    0 0 30px #ff8abf;
+
+
+}
+
+
+
+.photos img:hover {
+
+
+    transform:
+
+    scale(1.1)
+
+    rotate(2deg);
+
+
+}
+
+
+
+
+
+
+
+
+/* STARS */
+
+
+#starsContainer {
+
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:20px;
+
+
+}
+
+
+
+.star {
+
+
+    width:70px;
+
+    height:70px;
+
+
+    border-radius:50%;
+
+
+    background:
+
+    radial-gradient(
+    white,
+    #9b5cff
+    );
+
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+
+    cursor:pointer;
+
+
+    animation:
+
+    float 3s infinite alternate;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* CAKE */
+
+
+.cake {
+
+
+    font-size:6rem;
+
+
+    margin:40px;
+
+
+}
+
+
+
+
+
+
+/* BTS */
+
+
+#bts {
+
+
+    background:
+
+    linear-gradient(
+
+    135deg,
+
+    rgba(80,0,150,.5),
+
+    rgba(255,100,180,.3)
+
+    );
+
+}
+
+
+
+
+
+/* FUTURE */
+
+
+.cards {
+
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:30px;
+
+}
+
+
+
+.cards div {
+
+
+    width:250px;
+
+
+    padding:30px;
+
+
+    border-radius:25px;
+
+
+    background:
+
+    rgba(255,255,255,.1);
+
+
+    backdrop-filter:blur(20px);
+
+
+    font-size:1.2rem;
+
+
+}
+
+
+
+
+
+
+
+/* SUNRISE */
+
+
+#sunrise {
+
+
+    background:
+
+    linear-gradient(
+
+    #12001f,
+
+    #ff9ebc,
+
+    #ffd89b
+
+    );
+
+}
+
+
+
+
+
+
+
+/* FINAL */
+
+
+#final {
+
+
+    background:
+
+    radial-gradient(
+
+    circle,
+
+    #ff9ec7,
+
+    #40005c
+
+    );
+
+
+}
+
+
+
+
+
+/* ANIMATIONS */
+
+
+@keyframes glow {
+
+
+from {
+
+text-shadow:
+0 0 10px pink;
+
+}
+
+
+to {
+
+text-shadow:
+0 0 50px white;
+
+}
+
+
+}
+
+
+
+@keyframes fade {
+
+
+from {
+
+opacity:0;
+
+}
+
+
+to {
+
+opacity:1;
+
+}
+
+}
+
+
+
+
+@keyframes float {
+
+
+from {
+
+transform:translateY(0);
+
+}
+
+
+to {
+
+transform:translateY(-20px);
+
+}
+
+
+}
+
+
+
+
+
+
+
+/* MOBILE */
+
+
+@media(max-width:600px){
+
+
+h1 {
+
+font-size:3rem;
+
+}
+
+
+#intro h2 {
+
+font-size:3.5rem;
+
+}
+
+
+.photos img {
+
+width:90%;
+
+}
+
+
+#timer {
+
+font-size:1.7rem;
+
+}
+
+
+}
